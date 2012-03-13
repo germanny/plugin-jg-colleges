@@ -1,0 +1,22 @@
+/*
+Title:      Styles hacks for the abomination that is Internet Explorer 7
+Author:     CMN.com // http://cmn.com/
+Updated:    Nov, 2011
+*/
+
+nav#menu{
+	width:48.6em;
+	padding-top: 1.7em;
+}
+#tagline{
+	margin:0 auto;
+}
+ul#areas{
+	width:70em;
+}
+#areas h3{line-height: 1em;}
+#featured_sites h2{line-height: 1em;}
+form.request{margin-top: -100px;}
+form.request legend{top:1em;line-height: 1em;}
+form.request ol{top:3em;}
+form.request button{top:0;margin:3em 0 0;}

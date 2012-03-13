@@ -1,0 +1,157 @@
+/***** RESET *****/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;background:transparent;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+html {
+    -webkit-text-size-adjust: 100%; /* 3 */
+    -ms-text-size-adjust: 100%; /* 3 */
+	-webkit-font-smoothing: antialiased;
+}
+body{line-height:1;text-rendering: optimizeLegibility;}
+body,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+p,h2,h3{orphans:3;widows:3}
+h2,h3{page-break-after:avoid}
+
+ol,ul{list-style:none;}
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+
+//SMALL STUFF
+small{font-size: 75%;}
+sub,sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* remember to define focus styles! */
+:focus,:hover,:active{outline:none;}
+
+/* remember to highlight inserts somehow! */
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+
+/* HTML5 tags */
+article, aside, figure, figure img, figcaption, footer, header, hgroup, nav, section {display:block;}
+audio, canvas, video {
+	display: inline-block;
+	*display: inline;
+    *zoom: 1;
+}
+audio:not([controls]) {
+    display: none;
+}
+
+// FIGURES AND IMAGES
+figure {margin: 0;position: relative;}
+figure img {width: 100%;}
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+// Tables still need 'cellspacing="0"' in the markup
+table{border-collapse:collapse;border-spacing:0;}
+
+// GLOBAL ELEMENTS
+.clearer,.clear{clear:both;}
+
+.float-left,.alignleft,.nav-previous{float:left;}
+.float-right,.alignright,.nav-next{float:right;}
+.alignnone{float:none;}
+.aligncenter{margin:0 auto;display:block;}
+
+.nodisplay,.hide,.hidden,[hidden],.screen-reader-text,.ui-tabs-hide,span.type{display:none;}
+
+#accessibility{position:absolute;top:-9999px;font-size:1px;}
+
+hr{
+	width:100%;
+	height:1px;
+	margin:0;
+	background: none;
+	border: 0;
+	clear: both;
+}
+
+// FORMS and FORM ELEMENTS
+form{ margin: 0; }
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+select{
+	outline: 0;
+	vertical-align: middle;
+    -webkit-appearance: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background-clip: padding-box;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding;
+}
+/* Tweaks for Safari + Chrome. */
+@media (-webkit-min-device-pixel-ratio: 0) {
+  select[size],
+  select[multiple] {
+    background-image: none;
+    padding: 0;
+  }
+optgroup {
+  font-style: normal;
+  font-weight: normal;
+}
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+button,
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+    cursor: pointer; /* 1 */
+    -webkit-appearance: button; /* 2 */
+    *overflow: visible;  /* 3 */
+}
+input,
+button,
+textarea {
+  margin: 0;
+  vertical-align: middle;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    display: none;
+}

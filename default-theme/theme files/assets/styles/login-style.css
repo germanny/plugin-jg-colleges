@@ -1,0 +1,56 @@
+/* Custom Login styles */
+
+h1 a {
+	background: url(../assets/images/photo-featured-default.gif) no-repeat top center !important;
+	width: 160px;
+	height: 160px !important;
+	display: block;
+	margin-top: -70px !important;
+}
+.login form {
+	background-color: #fff;
+}
+
+label { color: #3c4c57; }
+input, select { color: #3c4c57; }
+
+#login form .submit input {
+	padding:.5em 1em;
+	
+	border:0;
+	
+	color:#fff;
+	font-family:'ff-din-web',sans-serif;
+	font-size:1.4em;
+	font-weight:700;
+	text-shadow:2px 2px 0 rgba(56,66,76,0.2);
+	text-transform:uppercase;
+	
+	border-radius:7px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	-khtml-border-radius:7px;
+
+	background-color:#01aad7;
+	background-color:#01aad7;
+
+	-webkit-transition:background-color .2s ease-in-out;
+	-moz-transition:background-color .2s ease-in-out;
+	-o-transition:background-color .2s ease-in-out;
+	transition:background-color .2s ease-in-out
+}
+
+#login form .submit input:visited{background-color:#3fbddf;background-color:rgba(1,170,215,0.75);color: #fff;}
+
+#login form .submit input:hover{background-color:#0177bb;background-color:#0177bb;color: #fff;}
+
+#login form .submit input:active,#login form .submit input:focus{background-color:#ec6240;background-color:#ec6240;color: #fff;}
+
+.login #nav a {
+	color: #01aad7 !important;
+}
+
+.login #nav a:hover {
+	color: #0177bb !important;
+}
+

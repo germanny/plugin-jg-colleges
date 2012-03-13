@@ -1,0 +1,92 @@
+.textColorBody {
+	color: rgb(48,55,64);
+}
+.textLighterGrey {
+	color: rgb(67,75,85);
+	color: rgba(48,55,64,.85);
+}
+.boldText{
+	font-weight: @font-bold;
+}
+.boldUpperText {
+	font-weight: @font-bold;
+	text-transform: uppercase;
+}
+.textShadow(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1) {
+  text-shadow: @x-axis @y-axis @blur rgba(56,66,76, @alpha);
+}
+.smUppercaseText{
+	font-family: @font-secondary;
+	letter-spacing: .1em;
+	.boldUpperText;
+}
+
+.borderTop {
+	border-top:1px solid rgb(230,231,232);
+	border-top:1px solid rgba(48,55,64,.16);
+}
+.borderBottom{
+	border-bottom:1px solid rgb(230,231,232);
+	border-bottom:1px solid rgba(48,55,64,.16);
+}
+
+
+.border-radius (@radius) {
+	border-radius: @radius;
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-khtml-border-radius: @radius;
+}
+.box-shadow (@x: 1px, @y: 1px, @blur: 2px, @alpha: 0.1 ){
+	-moz-box-shadow: @x @y @blur rgba(62,71,8, @alpha);
+	-webkit-box-shadow:  @x @y @blur rgba(62,71,8, @alpha);
+	box-shadow:  @x @y @blur rgba(62,71,8, @alpha);
+}
+
+.gradient(@color: #e76e4d, @start: #e76e4d, @stop: #e2543e) {
+	background: @color;
+	background: -moz-linear-gradient(top,
+									@start 0%, 
+									@stop 100%
+				); /* FF3.6+ */
+	background: -webkit-gradient(linear, 
+								left top, 
+								left bottom, 
+								color-stop(0%,@start), 
+								color-stop(100%,@stop)
+				); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  
+								@start 0%,
+								@stop 100%
+				); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  
+								@start 0%,
+								@stop 100%
+				); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  
+									@start 0%,
+									@stop 100%
+				); /* IE10+ */
+	background: linear-gradient(top,  
+								@start 0%,
+								@stop 100%
+				); /* W3C */
+}
+
+.transition(@element:background-color, @duration:0.2s, @ease:ease-in-out) {
+-webkit-transition: @element @duration @ease;
+   -moz-transition: @element @duration @ease;
+     -o-transition: @element @duration @ease;
+        transition: @element @duration @ease;
+}
+
+.custom-bullet-li{
+	padding-left:1.2em;
+	list-style: none;
+	position: relative;
+}
+.custom-bullet-li-before{
+	content: "\2014  ";
+	position: absolute;
+	left:-.1em;
+}

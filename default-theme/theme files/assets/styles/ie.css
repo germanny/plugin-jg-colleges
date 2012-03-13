@@ -1,0 +1,17 @@
+/*
+Title:      Styles hacks for the abomination that is Internet Explorer
+Author:     CMN.com // http://cmn.com/
+Updated:    October, 2011
+*/
+
+header#branding{
+	background: #e76e4d;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e76e4d', endColorstr='#e2543e',GradientType=0 );
+}
+form.request select{
+	background: #ebeced;
+	filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ebeced',endColorstr='#e1e2e4',GradientType=0);
+}
+ul#areas{
+	width:70.5em;
+}
